@@ -19,7 +19,7 @@ function Card({ children }: any) {
 
   return (
     <motion.div
-      className={`w-[350px] h-auto bg-slate-400 relative rounded-lg transition-all duration-500 shadow-lg box-content ${
+      className={`w-[400px] h-auto bg-slate-400 relative rounded-lg transition-all duration-500 shadow-lg box-content ${
         isMobile ? "" : "transition-all"
       }`}
       variants={cardVariants}
@@ -27,7 +27,8 @@ function Card({ children }: any) {
       animate={isFlipped ? "fliped" : "initial"}
       whileHover="hover"
       onClick={handleClick}
-      style={{ y: scrollY }}>
+      style={{ y: scrollY }}
+    >
       {children}
     </motion.div>
   );
