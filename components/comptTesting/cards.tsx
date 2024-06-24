@@ -10,6 +10,8 @@ const cardVariants = {
 
 function Card({ children }: any) {
   const [isFlipped, setIsFlipped] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
+  const isMobile = window.innerWidth < 640;
 
   const handleClick = () => {
     setIsFlipped(!isFlipped);
@@ -17,13 +19,15 @@ function Card({ children }: any) {
 
   return (
     <motion.div
-      className="w-[400px] max-h-screen bg-slate-400 relative rounded-lg transition-all duration-500 shadow-lg box-content"
+      className={`w-[350px] h-auto bg-slate-400 relative rounded-lg transition-all duration-500 shadow-lg box-content ${
+        isMobile ? "" : "transition-all"
+      }`}
       variants={cardVariants}
       initial={"initial"}
       animate={isFlipped ? "fliped" : "initial"}
       whileHover="hover"
       onClick={handleClick}
-    >
+      style={{ y: scrollY }}>
       {children}
     </motion.div>
   );
@@ -32,7 +36,11 @@ function CardBody({ children }: any) {
   return <div className="px-2 py-2">{children}</div>;
 }
 function CardTitle({ children }: any) {
-  return <h3 className="text-4xl text-sky-900 font-bold mb-2 uppercase">{children}</h3>;
+  return (
+    <h3 className="text-4xl text-sky-900 font-bold mb-2 uppercase">
+      {children}
+    </h3>
+  );
 }
 function CardImage({ src, alt }: { src: string; alt: string }) {
   return (
@@ -42,7 +50,7 @@ function CardImage({ src, alt }: { src: string; alt: string }) {
   );
 }
 function CardContent({ children }: any) {
-  return <p className="text-sm">{children}</p>;
+  return <p className="text-lg">{children}</p>;
 }
 function CardFooter({ children }: any) {
   return (
