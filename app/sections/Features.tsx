@@ -29,7 +29,9 @@ export default function Features() {
             </Card>
           ))}
         </div>
+        
       </section>
+
     </main>
   );
 }
