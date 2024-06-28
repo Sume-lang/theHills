@@ -70,7 +70,7 @@ export default function Layouttemp() {
           }}
         >
           <h1 className="text-4xl font-extrabold uppercase text-start text-sky-900">
-            Why Travel <span className="text-sky-500 underline">with Us?</span>
+            Why Travel <span className="text-sky-500">with Us?</span>
           </h1>
         </motion.div>
         <motion.div

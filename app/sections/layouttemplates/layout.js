@@ -1,4 +1,9 @@
-import { HiChatBubbleLeftRight } from "react-icons/hi2";
+import {
+  HiChatBubbleLeftRight,
+  HiMiniCurrencyDollar,
+  HiUserGroup,
+  HiShieldCheck,
+} from "react-icons/hi2";
 
 const dataLayout = [
   {
@@ -11,26 +16,26 @@ const dataLayout = [
   },
   {
     id: 2,
-    name: "24/7",
-    title: "Support Service",
+    name: "Affordable",
+    title: "Include Services",
     desc: "lorem ipsum dolor sit amet consectetur adipisicing elit. Non sit illo culpa quam, maiores animi incidunt quae officiis laudantium eveniet vel voluptatibus fuga dicta, cum officia magnam cupiditate a.  Sections 2",
-    icons: <HiChatBubbleLeftRight />,
+    icons: <HiMiniCurrencyDollar />,
     link: "/",
   },
   {
     id: 3,
-    name: "24/7",
-    title: "Support Service",
+    name: "Family Friendly",
+    title: "Suitable For Groups",
     desc: "lorem ipsum dolor sit amet consectetur adipisicing elit. Non sit illo culpa quam, maiores animi incidunt quae officiis laudantium eveniet vel voluptatibus fuga dicta, cum officia magnam cupiditate a.  Sections 3",
-    icons: <HiChatBubbleLeftRight />,
+    icons: <HiUserGroup />,
     link: "/",
   },
   {
     id: 4,
-    name: "24/7",
-    title: "Support Service",
+    name: "Safe",
+    title: "Safety Guarantee",
     desc: "lorem ipsum dolor sit amet consectetur adipisicing elit. Non sit illo culpa quam, maiores animi incidunt quae officiis laudantium eveniet vel voluptatibus fuga dicta, cum officia magnam cupiditate a. Sections 4",
-    icons: <HiChatBubbleLeftRight />,
+    icons: <HiShieldCheck />,
     link: "/",
   },
   {
