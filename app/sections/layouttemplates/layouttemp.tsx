@@ -139,5 +139,3 @@ export default function Layouttemp() {
     </main>
   );
 }
-
-//create a grid of features
