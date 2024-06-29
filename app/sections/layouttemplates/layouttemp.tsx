@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { dataLayout } from "../layouttemplates/layout";
 import { features } from "process";
+import OtherLayout from "./otherLayout";
 
 export default function Layouttemp() {
   const [show, setShow] = useState(dataLayout[0]);
@@ -20,8 +21,7 @@ export default function Layouttemp() {
           ease: [0, 0.71, 0.2, 1.01],
         }}
         id="Hero"
-        className="w-full flex flex-col items-center justify-center bg-[url('/Images/theHillspict/BeachPicts/Beach-1.jpg')] bg-cover bg-center bg-no-repeat"
-      >
+        className="w-full flex flex-col items-center justify-center bg-[url('/Images/theHillspict/BeachPicts/Beach-1.jpg')] bg-cover bg-center bg-no-repeat">
         <div className="z-10 w-full min-h-screen bg-slate-900 bg-opacity-50">
           <div className="w-full min-h-screen flex flex-col items-center justify-center">
             <h1 className="lg:text-7xl text-4xl font-extrabold text-white uppercase">
@@ -58,7 +58,7 @@ export default function Layouttemp() {
           </div>
         </div>
       </motion.section>
-      <section className="mt-1 p-3 max-h-screen">
+      {/* <section className="mt-1 p-3 max-h-screen">
         <motion.div
           className="w-full flex flex-col items-center justify-center"
           initial={{ opacity: 0, scale: 0.5 }}
@@ -135,7 +135,10 @@ export default function Layouttemp() {
         <div className="w-1/2 flex flex-col items-center justify-center  border-slate-900 p-4 shadow-md rounded-sm bg-[url('/Images/theHillspict/BeachPicts/Beach-4.jpg')] bg-cover bg-center bg-no-repeat min-h-[500px]">
           Testing
         </div>
-      </motion.section>
+      </motion.section> */}
+      <section>
+        <OtherLayout />
+      </section>
     </main>
   );
 }
