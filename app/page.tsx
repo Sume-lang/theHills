@@ -1,5 +1,5 @@
 import React from "react";
-import { Hero, Features } from "./section/sections";
+import { Hero, Features, Services } from "./section/sections";
 
 export default function Home() {
   return (
@@ -9,6 +9,9 @@ export default function Home() {
       </section>
       <section>
         <Features />
+      </section>
+      <section>
+        <Services />
       </section>
     </main>
   );

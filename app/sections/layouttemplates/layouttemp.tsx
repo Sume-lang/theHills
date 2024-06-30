@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { dataLayout } from "../layouttemplates/layout";
+import { dataLayout } from "../../section/layout";
 import { features } from "process";
 import OtherLayout from "./otherLayout";
 
@@ -21,7 +21,8 @@ export default function Layouttemp() {
           ease: [0, 0.71, 0.2, 1.01],
         }}
         id="Hero"
-        className="w-full flex flex-col items-center justify-center bg-[url('/Images/theHillspict/BeachPicts/Beach-1.jpg')] bg-cover bg-center bg-no-repeat">
+        className="w-full flex flex-col items-center justify-center bg-[url('/Images/theHillspict/BeachPicts/Beach-1.jpg')] bg-cover bg-center bg-no-repeat"
+      >
         <div className="z-10 w-full min-h-screen bg-slate-900 bg-opacity-50">
           <div className="w-full min-h-screen flex flex-col items-center justify-center">
             <h1 className="lg:text-7xl text-4xl font-extrabold text-white uppercase">

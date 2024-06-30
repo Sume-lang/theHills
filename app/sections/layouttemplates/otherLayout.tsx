@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
-import { dataLayout } from "../layouttemplates/layout";
+import { dataLayout } from "../../section/layout";
 
 export default function OtherLayout() {
   const [show, setShow] = useState(dataLayout[0]);
