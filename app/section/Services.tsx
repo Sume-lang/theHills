@@ -20,8 +20,8 @@ import {
 } from "./ServicesData";
 export default function Services() {
   return (
-    <main className="relative min-h-screen flex flex-col lg:flex-row">
-      <section className="w-full p-4 flex-col items-center justify-center">
+    <main className="relative min-h-screen flex flex-col">
+      {/* <section className="w-full p-4 flex-col items-center justify-center">
         <div
           id="Tour"
           className="flex flex-col lg:flex-row justify-center items-center"
@@ -60,6 +60,17 @@ export default function Services() {
             </Card>
           ))}
         </motion.div>
+      </section> */}
+      <section className="flex flex-col justify-start items-center gap-1 px-16">
+        <div className="w-1/1 grid grid-cols-5 grid-rows-6 gap-1 h-[500px]">
+          <div className="col-span-3 row-span-3 rounded-md shadow-md p-2 items-center justify-center flex"
+            style={{backgroundImage: `url('/Images/theHillspict/Rinjani_mountains/Rinjani-Mointain-1.jpg')`, backgroundSize: "cover", backgroundPosition: "center", backgroundAttachment: "fixed"}}
+          ><div className="flex items-center justify-center flex-col"><h1 className="text-7xl font-bold text-sky-100 uppercase">Rinjani Mountain</h1></div></div>
+          {/* <div className="col-span-2 row-span-2 col-start-4 rounded-md shadow-md p-2" style={{backgroundImage: `url('/Images/theHillspict/Rinjani_mountains/Rinjani-Mointain-2.jpg')`, backgroundSize: "cover", backgroundPosition: "center"}}>2</div>
+          <div className="col-span-2 row-span-4 col-start-4 row-start-3 rounded-md shadow-md p-2"  style={{backgroundImage: `url('/Images/theHillspict/Rinjani_mountains/Rinjani-Mointain-3.jpg')`, backgroundSize: "cover", backgroundPosition: "center"}}>3</div> */}
+          <div className="row-span-3 row-start-4 rounded-md shadow-md p-2"  style={{backgroundImage: `url('/Images/theHillspict/Rinjani_mountains/Rinjani-Mointain-4.jpg')`, backgroundSize: "cover", backgroundPosition: "center"}}>4</div>
+          <div className="col-span-2 row-span-3 row-start-4 rounded-md shadow-md p-2"style={{backgroundImage: `url('/Images/theHillspict/Rinjani_mountains/Rinjani-Mointain-5.jpg')`, backgroundSize: "cover", backgroundPosition: "center"}}>5</div>
+        </div>
       </section>
     </main>
   );
